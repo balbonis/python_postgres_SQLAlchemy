@@ -25,7 +25,7 @@ def connect_to_database_and_fetch_emails():
             result = connection.execute(query)
             for row in result:
                 print (row[0])
-                message = "Connected via SQLAlchemy"
+                message = "<strong>Connected via SQLAlchemy</strong>"
                 emailids = str(row[0])
                 message = message + " " + "Created by: " + emailids
 
